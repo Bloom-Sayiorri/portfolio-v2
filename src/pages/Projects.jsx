@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Projects({projects}) {
   const displayedProject = projects.map((project) => {
@@ -6,7 +7,8 @@ function Projects({projects}) {
       <div>
         <h3>{project.title}</h3>
         <h4>{project.stack}</h4>
-        <Link to={project.url}>Live Demo</Link>
+        <NavLink to={project.demoUrl}>Live Demo</NavLink>
+        <NavLink to={project.githubUrl}>Github Code</NavLink>
       </div> 
     )
   })
