@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../styles/projects.css'
 
 function Projects({projects}) {
   const displayedProject = projects.map((project) => {
