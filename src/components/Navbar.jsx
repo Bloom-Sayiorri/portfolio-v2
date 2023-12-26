@@ -1,11 +1,12 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import 
 
 function Navbar() {
   return (
-    <div>
+    <div className='header'>
       <h1>Bloom Sayiorri</h1>
-      <NavLink></NavLink>
+      <NavLink> </NavLink>
     </div>
   )
 }
