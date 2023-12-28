@@ -5,11 +5,11 @@ import '../styles/navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
-      <h1 className='home_header1'><Link to='/'className='home_link'>Bloom Sayiorri</Link></h1>
-      <br/>
+      <Link to='/'className='home_link'>Bloom Sayiorri</Link>
       <nav className='other_links'>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/skills' className='child_links'>Skills</Link>
+        <Link to='/projects' className='child_links'>Projects</Link>
+        <Link to='/about' className='child_links'>About</Link>
       </nav>
     </div>
   )
