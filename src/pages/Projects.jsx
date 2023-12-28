@@ -14,7 +14,7 @@ function Projects({projects}) {
   //   )
   // })
   return (
-    <div>
+    <div className='projects'>
       {/* {displayedProject} */}
       Projects here!!!
     </div>
