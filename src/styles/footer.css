@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -8,5 +8,19 @@
     color: white;
     text-align: center;
     padding: 10px;
-    line-height: .5;
+    align-items: center;
+}
+
+.first_section {
+    float: left;
+}
+
+.second_Section {
+    float: right;
+}
+
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
 }
