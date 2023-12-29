@@ -1,0 +1,10 @@
+.home {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    height: 200px;
+    width: 250px;
+}
