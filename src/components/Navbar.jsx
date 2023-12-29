@@ -5,8 +5,9 @@ import '../styles/navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
-      <Link to='/'className='home_link'>Bloom Sayiorri</Link>
+      <Link to='/home'className='home_link'>Bloom Sayiorri</Link>
       <nav className='other_links'>
+        <Link to='/home' className='child_links'>Home</Link>
         <Link to='/skills' className='child_links'>Skills</Link>
         <Link to='/projects' className='child_links'>Projects</Link>
         <Link to='/about' className='child_links'>About</Link>
