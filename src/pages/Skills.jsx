@@ -14,7 +14,7 @@ function Skills({skills}) {
   }
 
   return (
-    <div className='skills'>
+    <div className='skill'>
       <h3>Skills</h3>
       {skills}
     </div>
