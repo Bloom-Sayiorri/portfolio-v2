@@ -1,22 +1,27 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import '../styles/projects.css'
 
 function Projects({projects}) {
-  // const displayedProject = projects.map((project) => {
-  //   return (
-  //     <div>
-  //       <h3>{project.title}</h3>
-  //       <h4>{project.stack}</h4>
-  //       <NavLink to={project.demoUrl}>Live Demo</NavLink>
-  //       <NavLink to={project.githubUrl}>Github Code</NavLink>
-  //     </div> 
-  //   )
-  // })
+  const displayedProject = projects.map((project) => {
+    return (
+      <li className='list'>
+        <h3 className='title'>{project.title}</h3>
+        {project.stacks.map((stack) => {
+          return (
+            <p className='stack'>{stack}</p>
+          )
+        })}
+        <NavLink to={project.demoUrl} className='btns'>Live Demo</NavLink>
+        <NavLink to={project.githubUrl} className='btns'>Github Code</NavLink>
+      </li> 
+    )
+  })
   return (
-    <div className='projects'>
-      {/* {displayedProject} */}
-      Projects here!!!
+    <div className='container'>
+      <ul className='wrapper'>
+        {displayedProject}
+      </ul>
     </div>
   )
 }

@@ -6,16 +6,25 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import data from './data.js';
+import { useEffect, useState } from 'react';
 
 
 function App() {
+
+  const [ projects, setProjects ] = useState([]);
+
+  useEffect(() => {
+    setProjects(data);
+  }, []);
+  
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/skills' element={<Skills/>} />
-        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/projects' element={<Projects projects={projects}/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer />
