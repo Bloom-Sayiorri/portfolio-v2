@@ -6,6 +6,7 @@ function Projects({projects}) {
   const displayedProject = projects.map((project) => {
     return (
       <li className='list'>
+        <img src={project.imgUrl} alt="Project" className=''/>
         <h3 className='title'>{project.title}</h3>
         {project.stacks.map((stack) => {
           return (
