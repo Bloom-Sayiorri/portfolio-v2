@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
-import About from './pages/About';
+import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 import data from './data.js';
@@ -25,7 +25,7 @@ function App() {
         <Route exact path='/' element={<Home/>}/>
         <Route path='/skills' element={<Skills/>} />
         <Route path='/projects' element={<Projects projects={projects}/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

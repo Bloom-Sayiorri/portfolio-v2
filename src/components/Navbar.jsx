@@ -23,10 +23,10 @@ function Navbar() {
           style={({ isActive }) => {return isActive ? { color: "white", textDecoration: "underline 2px rgb(0, 255, 247)" } : {};}}
         >Projects</NavLink>
         <NavLink
-          to='/about'
+          to='/contact'
           className='child_links'
           style={({ isActive }) => {return isActive ? { color: "white", textDecoration: "underline 2px rgb(0, 255, 247)" } : {};}}
-        >About</NavLink>
+        >Contact</NavLink>
         {/* <NavLink
           to='/contact'
           className='child_links'
