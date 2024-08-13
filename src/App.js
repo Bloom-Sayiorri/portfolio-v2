@@ -5,7 +5,7 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import data from './data.js';
 import { useEffect, useState } from 'react';
 
@@ -27,7 +27,7 @@ function App() {
         <Route path='/projects' element={<Projects projects={projects}/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

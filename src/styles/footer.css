@@ -1,5 +1,5 @@
 .footer {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -21,6 +21,7 @@
 
 .link {
     text-decoration: none;
+    color: white;
 }
 
 .link:active {
