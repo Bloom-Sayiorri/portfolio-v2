@@ -16,6 +16,13 @@ function Skills({skills}) {
   return (
     <div className='skill'>
       <h3>Skills</h3>
+      <p>Javascript</p>
+      <p>Python</p>
+      <p>Ruby</p>
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>React</p>
+      <p>Ruby on Rails</p>
       {skills}
     </div>
   )
