@@ -23,6 +23,7 @@ function Skills({skills}) {
       <p>CSS3</p>
       <p>React</p>
       <p>Ruby on Rails</p>
+      <p>Nextjs</p>
       {skills}
     </div>
   )
