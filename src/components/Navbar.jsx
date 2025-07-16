@@ -20,8 +20,7 @@ function Navbar() {
 										"underline 2px rgb(0, 255, 247)",
 							  }
 							: {};
-					}}
-				>
+					}}>
 					Home
 				</NavLink>
 				<NavLink
@@ -35,8 +34,7 @@ function Navbar() {
 										"underline 2px rgb(0, 255, 247)",
 							  }
 							: {};
-					}}
-				>
+					}}>
 					Skills
 				</NavLink>
 				<NavLink
@@ -50,8 +48,7 @@ function Navbar() {
 										"underline 2px rgb(0, 255, 247)",
 							  }
 							: {};
-					}}
-				>
+					}}>
 					Projects
 				</NavLink>
 				<NavLink
@@ -65,8 +62,7 @@ function Navbar() {
 										"underline 2px rgb(0, 255, 247)",
 							  }
 							: {};
-					}}
-				>
+					}}>
 					Contact
 				</NavLink>
 				{/* <NavLink
