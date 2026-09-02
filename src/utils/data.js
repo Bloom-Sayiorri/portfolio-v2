@@ -1,28 +1,32 @@
 export const projects = [
 	{
-		image:
-			"/devboard.png",
+		image: "/devboard.png",
 		name: "Devboard",
 		description: "A collaborative workspace for individuals and teams.",
 		githubUrl: "https://github.com/Bloom-Sayiorri/devboard",
 		liveDemo: "https://devboard-puce.vercel.app/",
 	},
 	{
-		image:
-			"/recipe-share.png",
+		image: "/recipe-share.png",
 		name: "Recipe Share",
 		description: "A recipes sharing website for everyone.",
-		githubUrl: "https://github.com/Bloom-Tauta/recipe-app",
-		liveDemo: "https://recipe-app-eight-chi.vercel.app/",
+		githubUrl: "https://github.com/Bloom-Sayiorri/recipes",
+		liveDemo: "https://recipiez-share.netlify.app/",
 	},
 	{
-		image:
-			"/foodiez.png",
+		image: "/foodiez.png",
 		name: "Foodiez",
 		description: "A recipes website where food meets community.",
-		githubUrl: "https://github.com/Bloom-Tauta/recipes-client",
+		githubUrl: "https://github.com/Bloom-Sayiorri/recipes-client",
 		liveDemo: "https://foodiez-mu.vercel.app/",
 	},
+	// {
+	// 	image: "/blog-app.png",
+	// 	name: "Bloggy",
+	// 	description: "A blogs application website..",
+	// 	githubUrl: "https://github.com/Bloom-Sayiorri/blog-app",
+	// 	liveDemo: "",
+	// },
 ];
 
 export const languages = [
@@ -58,10 +62,6 @@ export const languages = [
 		name: "nodejs",
 		imgUrl: "https://devicon-website.vercel.app/api/nodejs/original.svg",
 	},
-	// {
-	// 	name: "php",
-	// 	imgUrl: "https://devicon-website.vercel.app/api/php/plain.svg",
-	// },
 	{
 		name: "ruby",
 		imgUrl: "https://devicon-website.vercel.app/api/ruby/original-wordmark.svg",
@@ -114,4 +114,6 @@ export const experiences = [
 		description2:
 			"As a Software Engineer Intern at Coding Samurai, I was able to be assigned various tasks to test my  frontensd skills as well as to upgrade them. Some of the projects i built are: Static portfolio, Counter application and a Todo-List web-app. The main technology used was Reactjs, TalwindCSS, API's(Application Programming Interface) and Redux.",
 	},
+
+
 ];

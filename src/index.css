@@ -32,35 +32,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* input {
-	color: var(--text-dark);
-	border: 0.01px solid var(--secondary-bg);
-	border-radius: 10px;
-	font-family: var(--main-font);
-	font-size: 1rem;
-	padding: 10px;
-	width: 100%;
-}
-
-textarea {
-	color: var(--text-dark);
-	border: 0.01px solid var(--secondary-bg);
-	border-radius: 10px;
-	font-family: var(--main-font);
-	font-size: 1rem;
-	padding: 10px;
-	height: 300px;
-	width: 100%;
-	resize: none;
-} */
-
-input::placeholder,
-textarea::placeholder {
-	color: var(--secondary-text);
-	font-size: 1rem;
-	font-family: var(--main-font);
-}
-
 li {
 	list-style: none;
 }

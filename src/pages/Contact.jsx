@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import styles from "../styles/contact.module.css";
 
 function Contact() {
@@ -12,15 +11,21 @@ function Contact() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		emailjs.send("service_tvy9vz8", "template_jqe6iqn", formData, "vpk4TVF0y91SNzixa").then(
-			() => {
-				alert("Your message has been sent.");
-			},
-			(error) => {
-				console.error("Email error:", error.text);
-				alert("Something went wrong.");
-			}
-		);
+		const form = new FormData(e.target);
+
+		const name = form.get("name");
+		const email = form.get("email");
+		const comments = form.get("comments");
+		const subject = `Portfolio contact from ${name}`;
+
+		const body = `
+			Name: ${name}
+			Email: ${email}
+			Message: ${message}
+		`;
+		window.location.href = `mailto:bloomsayiorri@gmail.com??subject=${encodeURIComponent(
+			subject
+		)}&body=${encodeURIComponent(body)}`;
 	};
 
 	const handleChange = (event) => {
@@ -43,10 +48,10 @@ function Contact() {
 					Email
 				</label>
 				<input type="email" id="email" name="email" placeholder="Enter email..." onChange={handleChange} required />
-				<label htmlFor="comments" className="">
-					Comments
+				<label htmlFor="message" className="">
+					Message
 				</label>
-				<textarea id="comments" name="comments" placeholder="Comments..." onChange={handleChange} />
+				<textarea id="message" name="message" placeholder="Message..." onChange={handleChange} />
 				<button type="submit" className={styles.submitBtn}>
 					Submit
 				</button>
