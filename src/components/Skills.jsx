@@ -13,7 +13,7 @@ export default function Skills() {
 
 	return (
 		<section className={styles.container}>
-			<h4 className={styles.heading}>Experience with</h4>
+			<h4 className={styles.heading}>Skills</h4>
 			<ul className={styles.languages}>{renderLanguages}</ul>
 		</section>
 	);

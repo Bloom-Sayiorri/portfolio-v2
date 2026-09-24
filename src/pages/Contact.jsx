@@ -11,11 +11,11 @@ function Contact() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		const form = new FormData(e.target);
+		const form = new FormData(event.target);
 
 		const name = form.get("name");
 		const email = form.get("email");
-		const comments = form.get("comments");
+		const message = form.get("message");
 		const subject = `Portfolio contact from ${name}`;
 
 		const body = `

@@ -18,7 +18,7 @@ export default function Experience() {
 					</section>
 					<p className={styles.date}>{exp.date}</p>
 				</section>
-				<p className={styles.description}>{exp.description2}</p>
+				<p className={styles.description}>{exp.description}</p>
 			</li>
 		);
 	});
