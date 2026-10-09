@@ -7,8 +7,8 @@ export const projects = [
 		liveDemo: "https://devboard-puce.vercel.app/",
 	},
 	{
-		image: "/recipe-share.png",
-		name: "Recipe Share",
+		image: "/recipiez-share.png",
+		name: "Recipiez Share",
 		description: "A recipes sharing website for everyone.",
 		githubUrl: "https://github.com/Bloom-Sayiorri/recipes",
 		liveDemo: "https://recipiez-share.netlify.app/",

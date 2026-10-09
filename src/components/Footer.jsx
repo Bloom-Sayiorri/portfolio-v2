@@ -9,9 +9,6 @@ export default function Footer() {
 				<p className={styles.text}>Bloom Sayiorri &copy; 2025 All rights reserved.</p>
 			</div>
 			<div className={styles.row2}>
-				<NavLink to="https://x.com/code_bergley" className="hover:text-blue-400">
-					<FaTwitter className={styles.twitterIcon} />
-				</NavLink>
 				<NavLink to="https://www.linkedin.com/in/bloom-sayiorri" className={styles.linkedinIcon}>
 					<FaLinkedin className={styles.linkedinIcon} />
 				</NavLink>
